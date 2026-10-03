@@ -1,0 +1,3 @@
+- [ ] Build passbook public site with state tabs and stakeholder profiles using clearly marked sample content.
+- [ ] Build mock SHG and partner experiences with shared live messages.
+- [ ] Verify desktop/mobile layout and cross-mode messaging.
