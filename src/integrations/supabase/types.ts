@@ -14,7 +14,33 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      shg_messages: {
+        Row: {
+          body: string
+          created_at: string
+          id: string
+          kind: string
+          sender_name: string
+          shg_id: string
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          id?: string
+          kind: string
+          sender_name: string
+          shg_id: string
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          id?: string
+          kind?: string
+          sender_name?: string
+          shg_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
