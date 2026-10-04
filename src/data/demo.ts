@@ -25,6 +25,6 @@ export type ShopProduct = {id:string; name:string; groupId:string; entrepreneurI
 export const shopProducts: ShopProduct[] = groups.flatMap(group => {
   const entrepreneur = entrepreneurs.find(person => person.groupId === group.id);
   const names = [...new Set([...group.products, ...(entrepreneur?.products ?? [])])];
-  return names.map((name, index) => ({id:`${group.id}-product-${index + 1}`, name, groupId:group.id, entrepreneurId:entrepreneur?.id}));
+  return names.map((name, index) => ({id:`${group.id}-product-${index + 1}`, name, groupId:group.id, entrepreneurId:entrepreneur?.products.some(product => product.toLowerCase() === name.toLowerCase()) ? entrepreneur.id : undefined}));
 });
 export const experts = [{id:'expert-dr-saurav',name:'Dr. Saurav',expertise:'Meteorology and agriculture',state:'Madhya Pradesh',region:'Khandwa and Pandhana',channel:'',shops:['Khandwa','Pandhana'],work:'Shares weather and agricultural guidance with farmers through his YouTube channel and is opening fair-price shops for farm inputs.',collaboration:'Formal partnership and point of contact to be confirmed.'}];
