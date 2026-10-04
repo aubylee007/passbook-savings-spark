@@ -21,7 +21,7 @@ export const entrepreneurs:Entrepreneur[] = [
 ];
 export const states = ['Madhya Pradesh','Odisha','Maharashtra'];
 export const money = (n:number) => '₹' + n.toLocaleString('en-IN');
-export type ShopProduct = {id:string; name:string; groupId:string; entrepreneurId?:string};
+export type ShopProduct = {id:string; name:string; groupId:string; entrepreneurId:string|undefined};
 export const shopProducts: ShopProduct[] = groups.flatMap(group => {
   const entrepreneur = entrepreneurs.find(person => person.groupId === group.id);
   const names = [...new Set([...group.products, ...(entrepreneur?.products ?? [])])];
