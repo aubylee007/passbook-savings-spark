@@ -1,7 +1,7 @@
 - [x] Build passbook public site with state tabs and stakeholder profiles using clearly marked sample content.
 - [x] Build mock SHG and partner experiences with shared live messages.
 - [x] Verify desktop/mobile layout and cross-mode messaging.
-- [ ] Add global Make Your Savings guide and navigation entry points.
-- [ ] Add linked product directory with direct product highlighting.
-- [ ] Add Dr. Saurav as an expert partner in Madhya Pradesh.
-- [ ] Verify new flows and responsive layout.
+- [x] Add global Make Your Savings guide and navigation entry points.
+- [x] Add linked product directory with direct product highlighting.
+- [x] Add Dr. Saurav as an expert partner in Madhya Pradesh.
+- [x] Verify new flows and responsive layout.
