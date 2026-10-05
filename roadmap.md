@@ -5,3 +5,5 @@
 - [x] Add linked product directory with direct product highlighting.
 - [x] Add Dr. Saurav as an expert partner in Madhya Pradesh.
 - [x] Verify new flows and responsive layout.
+- [ ] Remove the All states dropdown from public navigation (states are reachable through the State tab).
+- [ ] Verify the Shop main tab navigation and fix the failing Playwright check.
