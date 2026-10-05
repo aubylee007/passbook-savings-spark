@@ -7,3 +7,5 @@
 - [x] Verify new flows and responsive layout.
 - [ ] Remove the All states dropdown from public navigation (states are reachable through the State tab).
 - [ ] Verify the Shop main tab navigation and fix the failing Playwright check.
+- [x] Remove the All states dropdown from public navigation (states are reachable through the State tab).
+- [x] Verify the Shop main tab navigation and fix the failing Playwright check.
