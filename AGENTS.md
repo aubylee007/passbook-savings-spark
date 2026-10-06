@@ -13,3 +13,4 @@
 - Persist mock partner messages in a Cloud table with realtime subscription; demo login is a presentation gate only, so public write access must not be mistaken for production authorization.
 - Keep the three modes in the home route with hash-addressable public detail views, because the requested prototype is one connected passbook app with direct `#shg1` entry.
 - Keep global savings and shop views hash-addressable in the home route, because the existing passbook navigation and stakeholder deep links share one public experience.
+- Store public demo YouTube clip references by stable SHG ID in Cloud and render them with one shared video component; mock login is not production upload authorization.
