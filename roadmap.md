@@ -7,6 +7,6 @@
 - [x] Verify new flows and responsive layout.
 - [x] Remove the All states dropdown from public navigation (states are reachable through the State tab).
 - [x] Verify the Shop main tab navigation and fix the failing Playwright check.
-- [ ] Show named scheme/insurance details in SHG login and aggregate coverage in partner login.
-- [ ] Let demo SHGs share YouTube links, visible in public profiles and both logins.
-- [ ] Verify video sharing, validation and member privacy.
+- [x] Show named scheme/insurance details in SHG login and aggregate coverage in partner login.
+- [x] Let demo SHGs share YouTube links, visible in public profiles and both logins.
+- [x] Verify video sharing, validation and member privacy.
