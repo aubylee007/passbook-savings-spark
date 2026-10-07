@@ -7,7 +7,7 @@ export type PartnerSuggestion = { id: string; reason: string };
 export const recommendPartners = createServerFn({ method: 'POST' })
   .inputValidator((d: unknown) => z.object({ groupId: z.string().max(20), need: z.string().trim().min(5).max(1000) }).parse(d))
   .handler(async ({ data }): Promise<{ suggestions: PartnerSuggestion[]; error?: string }> => {
-    const apiKey = process.env.LOVABLE_API_KEY;
+    const apiKey = process.env['LOVABLE_API_KEY'];
     if (!apiKey) return { suggestions: [], error: 'AI matching is not configured yet.' };
     const group = groups.find(g => g.id === data.groupId);
     const directory = [
