@@ -10,3 +10,5 @@
 - [x] Show named scheme/insurance details in SHG login and aggregate coverage in partner login.
 - [x] Let demo SHGs share YouTube links, visible in public profiles and both logins.
 - [x] Verify video sharing, validation and member privacy.
+- [x] Add Partners dropdown (NGOs, Social entrepreneurs, Experts) and SHGs tab before it.
+- [x] AI partner finder in SHG login recommending from the Partners directory.
