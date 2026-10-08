@@ -28,3 +28,15 @@ export const shopProducts: ShopProduct[] = groups.flatMap(group => {
   return names.map((name, index) => ({id:`${group.id}-product-${index + 1}`, name, groupId:group.id, entrepreneurId:entrepreneur?.products.some(product => product.toLowerCase() === name.toLowerCase()) ? entrepreneur.id : undefined}));
 });
 export const experts = [{id:'expert-dr-saurav',name:'Dr. Saurav',expertise:'Meteorology and agriculture',state:'Madhya Pradesh',region:'Khandwa and Pandhana',channel:'',shops:['Khandwa','Pandhana'],work:'Shares weather and agricultural guidance with farmers through his YouTube channel and is opening fair-price shops for farm inputs.',collaboration:'Formal partnership and point of contact to be confirmed.'}];
+
+export type MediaItem = {id:string;title:string;who:string;place:string;youtubeUrl:string};
+export const mediaItems: MediaItem[] = [
+  {id:'m1',title:'A year of daily saving',who:'Jyoti Mahila SHG',place:'Barwani, Madhya Pradesh',youtubeUrl:''},
+  {id:'m2',title:'Compost that pays',who:'Meera Joshi · EcoKhad Ventures',place:'Khandwa, Madhya Pradesh',youtubeUrl:''},
+  {id:'m3',title:'Weaving a second income',who:'Anjali Patra · Koraput Weaves',place:'Koraput, Odisha',youtubeUrl:''},
+  {id:'m4',title:'The first enterprise',who:'Saraswati SHG',place:'Koraput, Odisha',youtubeUrl:''},
+  {id:'m5',title:'Grain bank, own terms',who:'Annapurna Bachat Gat',place:'Yavatmal, Maharashtra',youtubeUrl:''},
+  {id:'m6',title:'Reading the monsoon',who:'Dr. Saurav',place:'Khandwa, Madhya Pradesh',youtubeUrl:''},
+  {id:'m7',title:'From ₹10 a day',who:'Village youth savers',place:'Barwani, Madhya Pradesh',youtubeUrl:''},
+  {id:'m8',title:'What the match means',who:'Honorary partner conversation',place:'Recorded on ground',youtubeUrl:''},
+];
