@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
-import { ArrowLeft, ArrowRight, ChevronDown, ExternalLink, Send } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronDown, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { supabase } from '@/integrations/supabase/client';
 import { groups, ngos, entrepreneurs, states, schemes, shopProducts, experts, money, type Group, type Organization, type Entrepreneur , mediaItems} from '@/data/demo';
