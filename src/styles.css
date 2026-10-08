@@ -24,3 +24,13 @@
 .video-mock img{width:100%;height:auto;display:block;filter:saturate(.85) sepia(.1)}
 .video-mock .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:color-mix(in oklch,var(--paper) 82%,transparent);border:2px solid var(--primary);color:var(--primary);display:grid;place-items:center;font-size:18px;padding-left:4px;line-height:1}
 .video-mock .vid-note{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:color-mix(in oklch,var(--paper) 85%,transparent);font:10px var(--font-ledger);letter-spacing:.5px;color:var(--muted-foreground);text-transform:uppercase}
+.media-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.media-card {display:flex;flex-direction:column;min-width:0;border:1px solid var(--border);background:var(--paper);text-decoration:none;color:inherit}
+.media-card .video-mock {position:relative;display:block}
+.media-card .video-mock img {width:100%;height:auto;display:block}
+.media-copy {display:flex;flex-direction:column;gap:4px;padding:12px 14px}
+.media-copy strong {font:18px/1.2 var(--font-display)}
+.media-copy .place {font-size:12px;opacity:.75}
+.media-copy .figure {font:12px var(--font-ledger);letter-spacing:.04em;color:var(--primary)}
+@media(max-width:850px){.media-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.media-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
