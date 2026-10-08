@@ -12,3 +12,4 @@
 - [x] Verify video sharing, validation and member privacy.
 - [x] Add Partners dropdown (NGOs, Social entrepreneurs, Experts) and SHGs tab before it.
 - [x] AI partner finder in SHG login recommending from the Partners directory.
+- [x] Move the interview gallery under the Social Media dropdown as "YouTube" (no standalone Media tab).
